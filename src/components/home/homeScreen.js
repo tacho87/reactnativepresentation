@@ -14,64 +14,75 @@ export default class HomeScreen extends React.Component {
                 <ScrollView style={styles.container}>
                     <View style={styles.boxLarge}>
                         <Image
-                            style={{ height: "100%", width: "100%" }}
+                            style={styles.imageLarge}
                             source={{ uri: 'https://s3.amazonaws.com/fotos-horeca/felipemotta/MIGPS0471.jpg' }} />
+                        <Text style={styles.text}>WARO</Text>
                     </View>
                     <ScrollView horizontal>
                         <View style={styles.boxSmall}>
                             <Image
-                                style={{ height: "100%", width: "100%" }}
+                                style={styles.imageLarge}
                                 source={{ uri: 'https://s3.amazonaws.com/fotos-horeca/felipemotta/MIGPS0471.jpg' }} />
+                            <Text style={styles.text}>WARO</Text>
                         </View>
                         <View style={styles.boxSmall}>
                             <Image
-                                style={{ height: "100%", width: "100%" }}
+                                style={styles.imageLarge}
                                 source={{ uri: 'https://s3.amazonaws.com/fotos-horeca/felipemotta/MIGPS0191.jpg' }} />
+                            <Text style={styles.text}>WARO</Text>
                         </View>
                         <View style={styles.boxSmall}>
                             <Image
-                                style={{ height: "100%", width: "100%" }}
+                                style={styles.imageLarge}
                                 source={{ uri: 'https://s3.amazonaws.com/fotos-horeca/globalbrands/2951.jpg' }} />
+                            <Text style={styles.text}>WARO</Text>
                         </View>
                         <View style={styles.boxSmall}>
                             <Image
-                                style={{ height: "100%", width: "100%" }}
+                                style={styles.imageLarge}
                                 source={{ uri: 'https://s3.amazonaws.com/fotos-horeca/globalbrands/2953.jpg' }} />
+                            <Text style={styles.text}>WARO</Text>
                         </View>
                         <View style={styles.boxSmall}>
                             <Image
-                                style={{ height: "100%", width: "100%" }}
+                                style={styles.imageLarge}
                                 source={{ uri: 'https://s3.amazonaws.com/fotos-horeca/felipemotta/MIGPS2133.jpg' }} />
+                            <Text style={styles.text}>WARO</Text>
                         </View>
 
                     </ScrollView>
                     <View style={styles.boxLarge}>
                         <Image
-                            style={{ height: "100%", width: "100%" }}
+                            style={styles.imageLarge}
                             source={{ uri: 'https://s3.amazonaws.com/fotos-horeca/globalbrands/1366.jpg' }} />
+                        <Text style={styles.text}>WARO</Text>
                     </View>
                     <ScrollView horizontal>
                         <View style={styles.boxSmall}>
                             <Image
-                                style={{ height: "100%", width: "100%" }}
+                                style={styles.imageLarge}
                                 source={{ uri: 'https://s3.amazonaws.com/fotos-horeca/globalbrands/7520.jpg' }} />
+                            <Text style={styles.text}>WARO</Text>
                         </View>
                         <View style={styles.boxSmall}>
                             <Image
-                                style={{ height: "100%", width: "100%" }}
+                                style={styles.imageLarge}
                                 source={{ uri: 'https://s3.amazonaws.com/fotos-horeca/felipemotta/MIGPS2181.jpg' }} />
+                            <Text style={styles.text}>WARO</Text>
                         </View>
                         <View style={styles.boxSmall}>
                             <Image
-                                style={{ height: "100%", width: "100%" }}
+                                style={styles.imageLarge}
                                 source={{ uri: 'https://s3.amazonaws.com/fotos-horeca/felipemotta/MIGPS2122.jpg' }} />
+                            <Text style={styles.text}>WARO</Text>
                         </View>
 
                     </ScrollView>
                     <View style={styles.boxLarge}>
                         <Image
-                            style={{ height: "100%", width: "100%" }}
+                            style={styles.imageLarge}
                             source={{ uri: 'https://s3.amazonaws.com/fotos-horeca/felipemotta/MIGPS0502.jpg' }} />
+                        <Text style={styles.text}>WARO</Text>
                     </View>
                 </ScrollView>
             </View>
@@ -82,19 +93,25 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor: 'white',
+    },
+    text: {
+        textAlign: "center"
     },
     boxSmall: {
         width: 200,
         height: 200,
         marginBottom: 10,
-        marginRight: 10,
-        backgroundColor: 'skyblue',
+        marginRight: 10
     },
     boxLarge: {
         width: "100%",
         height: 600,
         marginBottom: 10,
         marginRight: 10,
-        backgroundColor: 'steelblue',
+
     },
+    imageLarge: {
+        flex: 1
+    }
 })
